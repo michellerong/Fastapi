@@ -6,7 +6,7 @@ app = FastAPI()
 
 
 @app.get("/homework")
-def root():
+def get_homeworks() -> dict:
     return homework
 
 @app.get('/school')
